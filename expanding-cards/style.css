@@ -12,6 +12,8 @@ body {
   height: 100vh;
   overflow: hidden;
   margin: 0;
+  background-color: #121212; /* Set the background color to a dark shade */
+  color: #fff; /* Ensure text color is white for better readability */
 }
 
 .container {
@@ -25,7 +27,7 @@ body {
   background-repeat: no-repeat;
   height: 80vh;
   border-radius: 50px;
-  color: #fff;
+  color: #c51414;
   cursor: pointer;
   flex: 0.5;
   margin: 10px;
@@ -60,4 +62,16 @@ body {
   .panel:nth-of-type(5) {
     display: none;
   }
+}
+
+.panel {
+  transition: background-color 0.3s ease, filter 0.3s ease;
+}
+
+.panel:hover {
+  filter: brightness(1.2); /* Increase brightness on hover */
+}
+
+.panel.active {
+    background-color: rgba(206, 125, 125, 0.8); /* Adjust the color and opacity as needed */
 }
